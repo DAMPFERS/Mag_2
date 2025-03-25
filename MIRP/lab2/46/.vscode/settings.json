@@ -57,13 +57,8 @@
   "C_Cpp_Runner.useLinkTimeOptimization": false,
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "files.associations": {
-    "stdio.h": "c",
-    "stdbool.h": "c",
+    "float.h": "c",
     "time.h": "c",
-    "consistent prog.h": "c",
-    "stdlib.h": "c",
-    "consistent_prog.h": "c",
-    "openmp_prog.h": "c",
-    "stdint.h": "c"
+    "limits.h": "c"
   }
 }
