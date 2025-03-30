@@ -34,15 +34,15 @@ __uint128_t findNumber(__uint128_t n, int *exp){
 
 
 char consistentMain(){
-    __uint128_t N;
+    uint64_t N;
     printf("Enter a number N: ");
-    scanf("%I128u", &N);
+    scanf("%I64u", &N);
     
     int p;
     
     // Последовательный перебор кандидатов до нахождения нужного числа
     clock_t start = clock();
-    __uint128_t res = findNumber(N, &p);
+    uint64_t res = findNumber(N, &p);
     clock_t end = clock();
 
     double time = (double)(end - start) / CLOCKS_PER_SEC;
