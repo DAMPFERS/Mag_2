@@ -6,6 +6,7 @@
 #include <float.h>
 #include <time.h>
 #include <mpi.h>
+#include <stddef.h>
 
 typedef struct {
     double sum;

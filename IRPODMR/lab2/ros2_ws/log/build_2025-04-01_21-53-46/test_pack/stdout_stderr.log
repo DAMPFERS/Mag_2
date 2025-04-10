@@ -1,0 +1,18 @@
+running develop
+running egg_info
+writing test_pack.egg-info/PKG-INFO
+writing dependency_links to test_pack.egg-info/dependency_links.txt
+writing entry points to test_pack.egg-info/entry_points.txt
+writing requirements to test_pack.egg-info/requires.txt
+writing top-level names to test_pack.egg-info/top_level.txt
+reading manifest file 'test_pack.egg-info/SOURCES.txt'
+writing manifest file 'test_pack.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/rvv/ros2_ws/install/test_pack/lib/python3.10/site-packages/test-pack.egg-link (link to .)
+Installing lab2 script to /home/rvv/ros2_ws/install/test_pack/lib/test_pack
+
+Installed /home/rvv/ros2_ws/build/test_pack
+running symlink_data
+symbolically linking /home/rvv/ros2_ws/build/test_pack/resource/test_pack -> /home/rvv/ros2_ws/install/test_pack/share/ament_index/resource_index/packages
+symbolically linking /home/rvv/ros2_ws/build/test_pack/package.xml -> /home/rvv/ros2_ws/install/test_pack/share/test_pack
+symbolically linking /home/rvv/ros2_ws/build/test_pack/launch/turtlesim_launch_gen.py -> /home/rvv/ros2_ws/install/test_pack/share/test_pack/launch

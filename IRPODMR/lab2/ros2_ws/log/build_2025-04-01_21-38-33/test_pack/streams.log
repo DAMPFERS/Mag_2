@@ -1,0 +1,25 @@
+[0.615s] Invoking command in '/home/rvv/ros2_ws/src/test_pack': PYTHONPATH=/home/rvv/ros2_ws/build/test_pack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rvv/ros2_ws/install/test_pack/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/test_pack build --build-base /home/rvv/ros2_ws/build/test_pack/build install --record /home/rvv/ros2_ws/build/test_pack/install.log --single-version-externally-managed install_data
+[0.801s] running egg_info
+[0.801s] writing ../../build/test_pack/test_pack.egg-info/PKG-INFO
+[0.802s] writing dependency_links to ../../build/test_pack/test_pack.egg-info/dependency_links.txt
+[0.803s] writing entry points to ../../build/test_pack/test_pack.egg-info/entry_points.txt
+[0.803s] writing requirements to ../../build/test_pack/test_pack.egg-info/requires.txt
+[0.804s] writing top-level names to ../../build/test_pack/test_pack.egg-info/top_level.txt
+[0.806s] reading manifest file '../../build/test_pack/test_pack.egg-info/SOURCES.txt'
+[0.807s] writing manifest file '../../build/test_pack/test_pack.egg-info/SOURCES.txt'
+[0.808s] running build
+[0.808s] running build_py
+[0.808s] copying test_pack/lab2.py -> /home/rvv/ros2_ws/build/test_pack/build/lib/test_pack
+[0.809s] running install
+[0.809s] running install_lib
+[0.810s] copying /home/rvv/ros2_ws/build/test_pack/build/lib/test_pack/lab2.py -> /home/rvv/ros2_ws/install/test_pack/lib/python3.10/site-packages/test_pack
+[0.811s] byte-compiling /home/rvv/ros2_ws/install/test_pack/lib/python3.10/site-packages/test_pack/lab2.py to lab2.cpython-310.pyc
+[0.811s] Sorry: TabError: inconsistent use of tabs and spaces in indentation (lab2.py, line 15)
+[0.811s] running install_data
+[0.811s] running install_egg_info
+[0.813s] removing '/home/rvv/ros2_ws/install/test_pack/lib/python3.10/site-packages/test_pack-0.0.0-py3.10.egg-info' (and everything under it)
+[0.814s] Copying ../../build/test_pack/test_pack.egg-info to /home/rvv/ros2_ws/install/test_pack/lib/python3.10/site-packages/test_pack-0.0.0-py3.10.egg-info
+[0.815s] running install_scripts
+[0.836s] Installing lab2 script to /home/rvv/ros2_ws/install/test_pack/lib/test_pack
+[0.836s] writing list of installed files to '/home/rvv/ros2_ws/build/test_pack/install.log'
+[0.867s] Invoked command in '/home/rvv/ros2_ws/src/test_pack' returned '0': PYTHONPATH=/home/rvv/ros2_ws/build/test_pack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rvv/ros2_ws/install/test_pack/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/test_pack build --build-base /home/rvv/ros2_ws/build/test_pack/build install --record /home/rvv/ros2_ws/build/test_pack/install.log --single-version-externally-managed install_data

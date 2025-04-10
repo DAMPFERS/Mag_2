@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+launch/turtlesim_launch_gen.py
+resource/test_pack
+test_pack/__init__.py
+test_pack/lab2.py
+test_pack/logic_code.py
+test_pack.egg-info/PKG-INFO
+test_pack.egg-info/SOURCES.txt
+test_pack.egg-info/dependency_links.txt
+test_pack.egg-info/entry_points.txt
+test_pack.egg-info/requires.txt
+test_pack.egg-info/top_level.txt
+test_pack.egg-info/zip-safe

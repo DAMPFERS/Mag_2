@@ -1,0 +1,2 @@
+javac GPSCoordinate.java Main.java
+java Main 

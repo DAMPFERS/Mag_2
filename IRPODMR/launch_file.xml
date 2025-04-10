@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<launch>
+  <node name="turtlesim" pkg="turtlesim" type="turtlesim_node" output="screen"/>
+  <node name="teleop" pkg="turtlesim" type="turtle_teleop_key" output="screen"/>
+  <node name="turtle2_node" pkg="test_pack" type="lab1.py" output="screen">
+    <param name="follower_name" value="turtle2"/>
+    <param name="target_name" value="turtle1"/>
+    <param name="speed" value="0.88"/>
+    <param name="spawn_x" value="5.4"/>
+    <param name="spawn_y" value="5.83"/>
+    <param name="spawn_theta" value="0.0"/>
+  </node>
+  <node name="turtle3_node" pkg="test_pack" type="lab1.py" output="screen">
+    <param name="follower_name" value="turtle3"/>
+    <param name="target_name" value="turtle2"/>
+    <param name="speed" value="3.14"/>
+    <param name="spawn_x" value="6.53"/>
+    <param name="spawn_y" value="6.29"/>
+    <param name="spawn_theta" value="0.0"/>
+  </node>
+  <node name="turtle4_node" pkg="test_pack" type="lab1.py" output="screen">
+    <param name="follower_name" value="turtle4"/>
+    <param name="target_name" value="turtle3"/>
+    <param name="speed" value="3.05"/>
+    <param name="spawn_x" value="1.41"/>
+    <param name="spawn_y" value="6.02"/>
+    <param name="spawn_theta" value="0.0"/>
+  </node>
+  <node name="turtle5_node" pkg="test_pack" type="lab1.py" output="screen">
+    <param name="follower_name" value="turtle5"/>
+    <param name="target_name" value="turtle4"/>
+    <param name="speed" value="3.04"/>
+    <param name="spawn_x" value="8.29"/>
+    <param name="spawn_y" value="3.61"/>
+    <param name="spawn_theta" value="0.0"/>
+  </node>
+  <node name="turtle6_node" pkg="test_pack" type="lab1.py" output="screen">
+    <param name="follower_name" value="turtle6"/>
+    <param name="target_name" value="turtle5"/>
+    <param name="speed" value="1.64"/>
+    <param name="spawn_x" value="3.46"/>
+    <param name="spawn_y" value="9.61"/>
+    <param name="spawn_theta" value="0.0"/>
+  </node>
+</launch>

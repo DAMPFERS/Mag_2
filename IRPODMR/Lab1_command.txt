@@ -18,3 +18,21 @@ source devel/setup.brush
 roslaunch test_pack launch_file.xml
 
 
+
+
+
+
+ros2 launch /home/rvv/ros2_ws/src/test_pack/launch/turtlesim_launch_gen.py
+
+cd ~/ros2_ws
+rm -rf build/ install/
+colcon build --packages-select test_pack --symlink-install
+source install/setup.bash
+
+prefix='bash -c "sleep 2; $0 $@"'
+
+
+
+
+/lab3/test$ python3 gui.py
+

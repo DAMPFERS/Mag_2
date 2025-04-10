@@ -1,0 +1,21 @@
+running egg_info
+writing ../../build/test_pack/test_pack.egg-info/PKG-INFO
+writing dependency_links to ../../build/test_pack/test_pack.egg-info/dependency_links.txt
+writing entry points to ../../build/test_pack/test_pack.egg-info/entry_points.txt
+writing requirements to ../../build/test_pack/test_pack.egg-info/requires.txt
+writing top-level names to ../../build/test_pack/test_pack.egg-info/top_level.txt
+reading manifest file '../../build/test_pack/test_pack.egg-info/SOURCES.txt'
+writing manifest file '../../build/test_pack/test_pack.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+byte-compiling /home/rvv/ros2_ws/install/test_pack/lib/python3.10/site-packages/test_pack/lab2.py to lab2.cpython-310.pyc
+running install_data
+running install_egg_info
+Sorry: TabError: inconsistent use of tabs and spaces in indentation (lab2.py, line 15)
+removing '/home/rvv/ros2_ws/install/test_pack/lib/python3.10/site-packages/test_pack-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/test_pack/test_pack.egg-info to /home/rvv/ros2_ws/install/test_pack/lib/python3.10/site-packages/test_pack-0.0.0-py3.10.egg-info
+running install_scripts
+Installing turtle_node script to /home/rvv/ros2_ws/install/test_pack/lib/test_pack
+writing list of installed files to '/home/rvv/ros2_ws/build/test_pack/install.log'

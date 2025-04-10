@@ -1,0 +1,39 @@
+running egg_info
+creating ../../build/test_pack/test_pack.egg-info
+writing ../../build/test_pack/test_pack.egg-info/PKG-INFO
+writing dependency_links to ../../build/test_pack/test_pack.egg-info/dependency_links.txt
+writing entry points to ../../build/test_pack/test_pack.egg-info/entry_points.txt
+writing requirements to ../../build/test_pack/test_pack.egg-info/requires.txt
+writing top-level names to ../../build/test_pack/test_pack.egg-info/top_level.txt
+writing manifest file '../../build/test_pack/test_pack.egg-info/SOURCES.txt'
+reading manifest file '../../build/test_pack/test_pack.egg-info/SOURCES.txt'
+writing manifest file '../../build/test_pack/test_pack.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/rvv/ros2_ws/build/test_pack/build
+creating /home/rvv/ros2_ws/build/test_pack/build/lib
+creating /home/rvv/ros2_ws/build/test_pack/build/lib/test_pack
+copying test_pack/logic_code.py -> /home/rvv/ros2_ws/build/test_pack/build/lib/test_pack
+copying test_pack/lab2.py -> /home/rvv/ros2_ws/build/test_pack/build/lib/test_pack
+copying test_pack/__init__.py -> /home/rvv/ros2_ws/build/test_pack/build/lib/test_pack
+running install
+running install_lib
+creating /home/rvv/ros2_ws/install/test_pack/lib/python3.10/site-packages/test_pack
+copying /home/rvv/ros2_ws/build/test_pack/build/lib/test_pack/logic_code.py -> /home/rvv/ros2_ws/install/test_pack/lib/python3.10/site-packages/test_pack
+copying /home/rvv/ros2_ws/build/test_pack/build/lib/test_pack/lab2.py -> /home/rvv/ros2_ws/install/test_pack/lib/python3.10/site-packages/test_pack
+copying /home/rvv/ros2_ws/build/test_pack/build/lib/test_pack/__init__.py -> /home/rvv/ros2_ws/install/test_pack/lib/python3.10/site-packages/test_pack
+byte-compiling /home/rvv/ros2_ws/install/test_pack/lib/python3.10/site-packages/test_pack/logic_code.py to logic_code.cpython-310.pyc
+byte-compiling /home/rvv/ros2_ws/install/test_pack/lib/python3.10/site-packages/test_pack/lab2.py to lab2.cpython-310.pyc
+Sorry: TabError: inconsistent use of tabs and spaces in indentation (lab2.py, line 15)
+byte-compiling /home/rvv/ros2_ws/install/test_pack/lib/python3.10/site-packages/test_pack/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/rvv/ros2_ws/install/test_pack/share/ament_index
+creating /home/rvv/ros2_ws/install/test_pack/share/ament_index/resource_index
+creating /home/rvv/ros2_ws/install/test_pack/share/ament_index/resource_index/packages
+copying resource/test_pack -> /home/rvv/ros2_ws/install/test_pack/share/ament_index/resource_index/packages
+copying package.xml -> /home/rvv/ros2_ws/install/test_pack/share/test_pack
+running install_egg_info
+Copying ../../build/test_pack/test_pack.egg-info to /home/rvv/ros2_ws/install/test_pack/lib/python3.10/site-packages/test_pack-0.0.0-py3.10.egg-info
+running install_scripts
+Installing turtle_node script to /home/rvv/ros2_ws/install/test_pack/lib/test_pack
+writing list of installed files to '/home/rvv/ros2_ws/build/test_pack/install.log'

@@ -1,0 +1,17 @@
+[0.547s] Invoking command in '/home/rvv/ros2_ws/build/test_pack': PYTHONPATH=/home/rvv/ros2_ws/build/test_pack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rvv/ros2_ws/install/test_pack/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rvv/ros2_ws/build/test_pack/build --no-deps symlink_data
+[0.750s] running develop
+[0.866s] running egg_info
+[0.866s] writing test_pack.egg-info/PKG-INFO
+[0.866s] writing dependency_links to test_pack.egg-info/dependency_links.txt
+[0.866s] writing entry points to test_pack.egg-info/entry_points.txt
+[0.867s] writing requirements to test_pack.egg-info/requires.txt
+[0.867s] writing top-level names to test_pack.egg-info/top_level.txt
+[0.869s] reading manifest file 'test_pack.egg-info/SOURCES.txt'
+[0.870s] writing manifest file 'test_pack.egg-info/SOURCES.txt'
+[0.872s] running build_ext
+[0.872s] Creating /home/rvv/ros2_ws/install/test_pack/lib/python3.10/site-packages/test-pack.egg-link (link to .)
+[0.872s] Installing lab2 script to /home/rvv/ros2_ws/install/test_pack/lib/test_pack
+[0.873s] 
+[0.873s] Installed /home/rvv/ros2_ws/build/test_pack
+[0.873s] running symlink_data
+[0.908s] Invoked command in '/home/rvv/ros2_ws/build/test_pack' returned '0': PYTHONPATH=/home/rvv/ros2_ws/build/test_pack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rvv/ros2_ws/install/test_pack/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rvv/ros2_ws/build/test_pack/build --no-deps symlink_data

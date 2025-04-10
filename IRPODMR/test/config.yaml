@@ -1,0 +1,4 @@
+topics:
+  cmd_vel: "turtle1/cmd_vel"
+  pose: "turtle1/pose"
+  follower_pose: "turtle2/pose"
