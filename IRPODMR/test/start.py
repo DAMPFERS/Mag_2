@@ -1,7 +1,7 @@
 import subprocess
 import time
 
-N = 5
+N = 2
 
 processes = []
 
@@ -14,9 +14,8 @@ time.sleep(1)
 
 for i in range(2, N + 2):  
     processes.append(subprocess.Popen(["python3", "lab_node.py", str(i)]))
-    time.sleep(1)
+    time.sleep(2)
 
 
 for p in processes:
     p.wait()
-

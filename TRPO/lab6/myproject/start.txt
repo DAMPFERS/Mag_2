@@ -1,0 +1,6 @@
+ ./gradlew.bat clean --refresh-dependencies
+gradle wrapper --gradle-version 8.13 --distribution-type bin
+
+
+./gradlew.bat clean build
+./gradlew.bat run

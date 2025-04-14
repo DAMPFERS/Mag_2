@@ -1,11 +1,15 @@
 import tkinter as tk
 import math
 from dds_utils import DDSNode, Twist, Pose, Spawn
-from logic_code import TurtleMove  
+
+import threading  
 
 class TurtleSimNode:
     
     def __init__(self):
+        self.lock = threading.Lock()
+        self.thread_pool = []
+    
         self.dds = DDSNode()
         self.writer_pose = self.dds.create_writer("pose")
         self.reader_cmd_vel = self.dds.create_reader("cmd_vel")
@@ -20,8 +24,7 @@ class TurtleSimNode:
         self.canvas.pack()
         
         self.add_turtle(1, x=250, y=250, theta=0.0, color="green")
-        
-        self.follower = TurtleMove()  
+          
         
         
         
@@ -76,16 +79,19 @@ class TurtleSimNode:
 
                 target = self.turtles.get(tid-1)
                 if target:
-                    linear, angular = self.follower.track_cmd_vel(pose, target["pose"])
-                    pose.x += linear * 0.1 * math.cos(pose.theta)
-                    pose.y += linear * 0.1 * math.sin(pose.theta)
-                    pose.theta += angular * 0.1
+                    pose.theta += twist.angular_z * 0.1
+                    pose.x += twist.linear_x * 0.1 * math.cos(pose.theta)
+                    pose.y += twist.linear_x * 0.1 * math.sin(pose.theta)
+                    #linear, angular = self.follower.track_cmd_vel(pose, target["pose"])
+                    #pose.x += linear * 0.1 * math.cos(pose.theta)
+                    #pose.y += linear * 0.1 * math.sin(pose.theta)
+                    #pose.theta += angular * 0.1
             
 
             pose.x = max(0.0, min(10.0, pose.x))
             pose.y = max(0.0, min(10.0, pose.y))
             
-
+            #print(pose)
             self.writer_pose.write(pose)
             
 

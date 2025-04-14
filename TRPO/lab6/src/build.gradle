@@ -1,0 +1,21 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.8.20'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'no.tornado:tornadofx:1.7.20'
+    implementation 'org.openjfx:javafx:21'
+}
+
+application {
+    mainClass = 'MainAppKt'
+}
+
+run {
+    jvmArgs = ['--module-path', 'libs/javafx-sdk-21/lib', '--add-modules', 'javafx.controls,javafx.fxml,javafx.base,javafx.graphics']
+}

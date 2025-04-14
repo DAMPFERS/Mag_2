@@ -14,6 +14,8 @@ public class GPSCoordinate implements Serializable {
     private double longitude;
     private LocalDateTime timestamp;
 
+
+    // Конструкторы
     public GPSCoordinate() {
         this(0.0, 0.0, LocalDateTime.now());
     }
@@ -28,6 +30,7 @@ public class GPSCoordinate implements Serializable {
         this(other.latitude, other.longitude, other.timestamp);
     }
 
+    // Геттеры и сеттеры
     public double getLatitude() {
         return latitude;
     }
@@ -61,8 +64,10 @@ public class GPSCoordinate implements Serializable {
         this.timestamp = timestamp;
     }
 
+
+    // Вычисление расстояния по формуле гаверсинусов
     public double distanceTo(GPSCoordinate other) {
-        final int R = 6371;
+        final int R = 6371; // Радиус Земли в километрах
 
         double latDistance = Math.toRadians(other.latitude - this.latitude);
         double lonDistance = Math.toRadians(other.longitude - this.longitude);
@@ -76,6 +81,8 @@ public class GPSCoordinate implements Serializable {
         return R * c;
     }
 
+
+    // Сериализация в текстовый формат
     @Override
     public String toString() {
         return String.format("%.6f;%.6f;%s", 
@@ -102,6 +109,8 @@ public class GPSCoordinate implements Serializable {
         }
     }
 
+    
+    // Бинарная сериализация
     private void writeObject(ObjectOutputStream out) throws IOException {
         out.writeDouble(latitude);
         out.writeDouble(longitude);
