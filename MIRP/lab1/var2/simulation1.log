@@ -1,0 +1,48 @@
+[1.00] BUS_WAIT: Bus 0 waiting at node 1
+[1.00] PASSENGER_CREATE: Passenger 0 at node 1 -> 2
+[1.00] BUS_WAIT: Bus 3 waiting at node 0
+[1.00] BUS_WAIT: Bus 2 waiting at node 3
+[1.00] BUS_WAIT: Bus 0 waiting at node 1
+[2.00] PASSENGER_CREATE: Passenger 1 at node 0 -> 4
+[2.00] BUS_WAIT: Bus 3 waiting at node 0
+[3.00] PASSENGER_CREATE: Passenger 2 at node 3 -> 2
+[3.00] BUS_WAIT: Bus 2 waiting at node 3
+[4.00] PASSENGER_CREATE: Passenger 3 at node 0 -> 1
+[4.00] BUS_WAIT: Bus 3 waiting at node 0
+[5.00] PASSENGER_CREATE: Passenger 4 at node 1 -> 0
+[5.00] BUS_WAIT: Bus 0 waiting at node 1
+[1.00] BUS_WAIT: Bus 1 waiting at node 0
+[1.00] BUS_WAIT: Bus 0 waiting at node 1
+[1.00] PASSENGER_CREATE: Passenger 0 at node 1 -> 2
+[1.00] BUS_WAIT: Bus 0 waiting at node 1
+[1.00] BUS_FORCE_DEPART: Bus 3: Forced depart (passengers: 1)
+[1.00] BUS_DEPART: Bus 3: 1 -> 0, passengers: 0/10
+[1.00] BUS_FORCE_DEPART: Bus 2: Forced depart (passengers: 1)
+[1.00] BUS_DEPART: Bus 2: 1 -> 0, passengers: 0/10
+[4.00] BUS_ARRIVE: Bus 2 arrived at 0, disembarked: 0
+[4.00] BUS_WAIT: Bus 1 waiting at node 0
+[4.00] BUS_ARRIVE: Bus 3 arrived at 0, disembarked: 0
+[4.00] BUS_WAIT: Bus 3 waiting at node 0
+[4.00] PASSENGER_CREATE: Passenger 1 at node 0 -> 4
+[4.00] BUS_WAIT: Bus 1 waiting at node 0
+[4.00] BUS_FORCE_DEPART: Bus 2: Forced depart (passengers: 1)
+[4.00] BUS_DEPART: Bus 2: 0 -> 1, passengers: 0/10
+[4.00] BUS_WAIT: Bus 3 waiting at node 0
+[6.00] BUS_ARRIVE: Bus 2 arrived at 1, disembarked: 0
+[6.00] PASSENGER_CREATE: Passenger 2 at node 3 -> 2
+[6.00] BUS_FORCE_DEPART: Bus 2: Forced depart (passengers: 1)
+[6.00] BUS_DEPART: Bus 2: 1 -> 0, passengers: 0/10
+[6.00] BUS_WAIT: Bus 0 waiting at node 1
+[8.00] PASSENGER_CREATE: Passenger 3 at node 0 -> 1
+[8.00] BUS_WAIT: Bus 1 waiting at node 0
+[8.00] BUS_ARRIVE: Bus 2 arrived at 0, disembarked: 0
+[8.00] BUS_FORCE_DEPART: Bus 2: Forced depart (passengers: 2)
+[8.00] BUS_DEPART: Bus 2: 0 -> 1, passengers: 1/10
+[8.00] BUS_WAIT: Bus 3 waiting at node 0
+[10.00] PASSENGER_CREATE: Passenger 4 at node 1 -> 0
+[10.00] BUS_WAIT: Bus 0 waiting at node 1
+[10.00] PASSENGER_ARRIVE: Passenger 3: 0 -> 1 (travel time: 3.00)
+[10.00] BUS_ARRIVE: Bus 2 arrived at 1, disembarked: 1
+[10.00] BUS_FORCE_DEPART: Bus 2: Forced depart (passengers: 2)
+[10.00] BUS_DEPART: Bus 2: 1 -> 0, passengers: 1/10
+[10.00] BUS_WAIT: Bus 0 waiting at node 1

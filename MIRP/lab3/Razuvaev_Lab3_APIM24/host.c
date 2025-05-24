@@ -73,10 +73,7 @@ int main() {
     context = clCreateContext(NULL, 1, &device, NULL, NULL, &err);
     if (err != CL_SUCCESS) return errorHandling("Failed to create context");
 
-    // queue = clCreateCommandQueue(context, device, CL_QUEUE_PROFILING_ENABLE, &err);
-
-    cl_queue_properties props[] = { CL_QUEUE_PROPERTIES, CL_QUEUE_PROFILING_ENABLE, 0 };
-    queue = clCreateCommandQueueWithProperties(context, device, props, &err);
+    queue = clCreateCommandQueue(context, device, CL_QUEUE_PROFILING_ENABLE, &err);
     if (err != CL_SUCCESS) return errorHandling("Failed to create command queue");
 
     // Загрузка и компиляция ядра
@@ -137,18 +134,8 @@ int main() {
     if (err != CL_SUCCESS) return errorHandling("Failed to set kernel arguments");
 
     // Запуск ядра
-    // size_t globalSize = (rows - sub_rows + 1) * (cols - sub_cols + 1);
-    // err = clEnqueueNDRangeKernel(queue, kernel, 1, NULL, &globalSize, NULL, 0, NULL, &kernelEvent);
-    
     size_t globalSize = (rows - sub_rows + 1) * (cols - sub_cols + 1);
-    
-    size_t localSize = 128; // Например, 64 рабочих элемента в группе
-    // Убедимся, что globalSize делится на localSize
-    globalSize = ((globalSize + localSize - 1) / localSize) * localSize;
-    err = clEnqueueNDRangeKernel(queue, kernel, 1, NULL, &globalSize, &localSize, 0, NULL, &kernelEvent);
-    
-    
-    
+    err = clEnqueueNDRangeKernel(queue, kernel, 1, NULL, &globalSize, NULL, 0, NULL, &kernelEvent);
     if (err != CL_SUCCESS) return errorHandling("Failed to enqueue kernel");
 
     // Ожидание завершения и замер времени
